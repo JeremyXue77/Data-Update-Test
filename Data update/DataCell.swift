@@ -9,16 +9,23 @@
 import UIKit
 
 class DataCell: UITableViewCell {
-
+    
+    @IBOutlet weak var IDLabel: UILabel!
+    @IBOutlet weak var newLabel: UILabel!
+    
+    @IBOutlet weak var percentLabel: UILabel!
+    @IBOutlet weak var valueLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    
+    func update(data: DataModal) {
+        self.IDLabel.text = "ID: \(data.ID)"
+        self.newLabel.isHidden = data.isNew ? false : true
+        self.percentLabel.text = "\(data.percent)%"
+        self.valueLabel.text = "\(data.value)"
     }
 
 }

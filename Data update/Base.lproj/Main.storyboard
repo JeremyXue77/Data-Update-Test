@@ -96,6 +96,12 @@
                                                 <constraint firstAttribute="trailing" secondItem="zjx-Ve-fgS" secondAttribute="trailing" constant="20" id="qHP-m6-Iti"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="IDLabel" destination="0pF-pI-ekp" id="tZX-TW-XXw"/>
+                                            <outlet property="newLabel" destination="zjx-Ve-fgS" id="R1p-kI-mYi"/>
+                                            <outlet property="percentLabel" destination="Grg-g5-aqs" id="gcB-Yi-L8k"/>
+                                            <outlet property="valueLabel" destination="Ncj-Yv-hfK" id="1CQ-sd-g1w"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
